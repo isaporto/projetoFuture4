@@ -1,0 +1,6 @@
+Laranja #CC4D00
+Laranja escuro #B34300
+roxo lilas #585D95
+cinza #D8D8D8
+cinzaescuro #808080
+cinzaletra #757575

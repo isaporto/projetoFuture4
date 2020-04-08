@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Future4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <script type="text/javascript">
+        function alertaEmail(){
+          var email = document.getElementById("userInput").value;
+          if(email.search(" ")===-1 &&
+            email.search("@")>=1 &&
+            email.length>email.search("@")+1 &&
+            email.lastIndexOf(".")>email.search("@") &&
+            email.length>email.lastIndexOf(".")){
+                alert("O email " + email + " foi enviado")
+                document.getElementById("demo").innerHTML="Bem vindo "+ document.getElementById("userInput").value+"!"
+            } else {alert("Email inválido")};
+            event.preventDefault()
+        }
+    </script>
+</head>
+<body>
+        <nav>
+            <li><a href="#contato">CONTATO</a></li>
+            <li><a href="https://www.future4.com.br/curso" target="_blank">CURSOS</a></li>
+            <li><a href="#home">HOME</a></li>
+        </nav>
+            <section>
+                <article>
+                    <div class="title">
+                        Projeto Seletivo Future4
+                    </div>
+                    <div id="demo"></div>
+                        <img class="element" src="future4.png" alt="Future4 - future, for anyone." /></div>
+                    <div class="credit">
+                        Turma Web Full Stack
+                    </div>
+                
+                </article>
+            </section>
+
+            <footer>
+                <form name="DigiteSeuEmail" onsubmit="return false" class="entradaEmail" id="myForm">
+                    <input type="text" id="userInput" maxlength="64" placeholder="Coloque seu e-mail para contato! :)">
+                    <input type="submit" value="ENVIAR" onclick="alertaEmail();" />
+                </form>
+            </footer>
+</body>
+</html>
